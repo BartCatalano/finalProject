@@ -1,0 +1,100 @@
+.bodyHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 80px;
+  height: 60px;
+  background-image: url(../../public/img/sfondoNavbar.png);
+  background-size: contain;
+  background-repeat: repeat;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.titleHeader {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 32px;
+  color: #00ffea;
+  text-shadow: 2px 2px #ff0066, 4px 4px #ffcc00;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.buttonHeader {
+  font-family: 'Cinzel', serif;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  padding: 2px;
+  margin: 3px;
+  background: linear-gradient(45deg, #ffcc00, #00ffea, #ff0066);
+  border: 2px solid #030005;
+  border-radius: 8px;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(138, 43, 226, 0.7);
+}
+
+.buttonHeader:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+  .bodyHeader {
+    padding: 10px 40px;
+    height: 60px;
+  }
+  
+  .nav {
+    justify-content: flex-start; 
+    gap: 15px; 
+  }
+
+  .buttonHeader {
+    font-size: 16px; 
+    padding: 5px 15px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .bodyHeader {
+    padding: 10px 20px; 
+  }
+
+  .titleHeader {
+    font-size: 28px;
+  }
+
+  .nav {
+    justify-content: center; 
+    gap: 10px;
+  }
+
+  .buttonHeader {
+    font-size: 14px; 
+    padding: 8px 18px;
+  }
+}
+
+@media (max-width: 420px) {
+  .bodyHeader {
+    padding: 5px 7px; 
+  }
+  .titleHeader {
+    font-size: 24px; 
+    margin-bottom: 10px; 
+  }
+
+
+  .buttonHeader {
+    font-size: 10px; 
+    width: 100%; 
+    text-align: center; 
+}
+  }

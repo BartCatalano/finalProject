@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
-
+import style from './AppHeader.module.css';
+import { useState } from "react";
 
 
 
@@ -11,24 +12,41 @@ const navMenu = [
     },
     {
         path: '/list',
-        title: 'Videogames Gallery'
+        title: 'Gallery'
     },
 
 ];
 
+  
+
 function AppHeader() {
+
+const [isActive, setIsActive] = useState(false);
+
+  const toggleMenu = () => {
+    setIsActive(!isActive);
+  };
+
+
+
     return (
-        <>
+        
+        <header className={style.bodyHeader}>
+        <div className={style.titleHeader}>
+          Videogame World
+        </div>
         <div>
-        <h1>sono Header</h1>
-        {/* creo il map per i bottoni dinamici */}
-            <div>
-                {navMenu.map((CurButton) => (
-                    <NavLink to={CurButton.path} key={CurButton.title}> {CurButton.title}</NavLink>
-                ))}</div></div>
-            
-        </>
+        <nav className={style.nav}>
+          {navMenu.map((CurButton) => (
+            <div className={style.buttonHeader}>
+            <NavLink  to={CurButton.path} key={CurButton.title} >
+              {CurButton.title}   </NavLink></div>
+          ))}
+        </nav></div>
+    </header>
     );
 }
+            
+      
 
 export default AppHeader;

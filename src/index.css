@@ -7,6 +7,7 @@ ul li,
 a {
   text-decoration: none;
   list-style-type: none;
+  color: white;
 }
 
 img {
@@ -20,3 +21,4 @@ img {
   width: 90%;
   text-align: center;
 }
+

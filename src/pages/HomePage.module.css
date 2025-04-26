@@ -1,0 +1,123 @@
+.container {
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 3%;
+}
+
+.titleHome {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 32px;
+  color: #d4f51c;
+  text-shadow: 2px 2px #ff0066, 4px 4px #ffcc00;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.testoHome {
+  text-align: center;
+  color: rgb(250, 244, 244);
+  font-size: xx-large;
+  border: 2px solid #ff0022;
+  box-shadow: 0 0 10px #ff0000, 0 0 20px #00ffcc, 0 0 30px #00ffcc;
+  border-radius: 10px;
+  padding: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0 auto;
+}
+
+.bodyHome {
+  background-image: url(../../public/img/sfondoNavbar.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position:50%;
+  max-width: 1600px;
+  width: 90%;
+  text-align: center;
+  border: 2px solid #ff0022;
+  box-shadow: 0 0 10px #ff0000, 0 0 20px #00ffcc, 0 0 30px #00ffcc;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 20px;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: pulseBorder 2s infinite alternate;
+}
+
+@keyframes pulseBorder {
+  0% {
+    box-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #00ffcc;
+  }
+  50% {
+    box-shadow: 0 0 20px #ff0000, 0 0 40px #ff0000, 0 0 60px #00ffff;
+  }
+  100% {
+    box-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #00ffcc;
+  }
+}
+
+@media (max-width: 1200px) {
+  .titleHome {
+    font-size: 28px;
+    padding: 20px;
+  }
+  .testoHome {
+    font-size: large;
+    padding: 15px;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .titleHome {
+    font-size: 24px;
+    padding: 15px;
+    flex-direction: column;
+  }
+
+  .bodyHome {
+    
+            background-size: cover;
+            background-repeat:no-repeat;
+            background-position:50%;
+            max-width: 1600px;
+            text-align: center;
+            border: 2px solid #ff0022;
+            box-shadow: 0 0 10px #ff0000, 0 0 20px #00ffcc, 0 0 30px #00ffcc;
+            border-radius: 10px;
+            margin: 0 auto;
+            padding: 20px;
+            animation: pulseBorder 2s infinite alternate;
+  }
+
+  .testoHome {
+    font-size: medium;
+  
+  }
+}
+
+@media (max-width: 420px) {
+  .titleHome {
+    font-size: 20px;
+    padding: 10px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+
+  .testoHome {
+    font-size: small;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+  
