@@ -1,6 +1,5 @@
 /* Assicurati che il body abbia un background nero e altezza completa */
 body {
-    background-color: black; /* Assicurati che il body abbia sempre lo sfondo nero */
     margin: 0;
     padding: 0;
     height: 100%; /* Alta tutta la finestra */
@@ -68,7 +67,7 @@ body {
     font-size: 18px;
     margin: 10px 0;
     color: #d4f51c;
-    text-shadow: 2px 2px #ff0066, 4px 4px #ffcc00;
+    text-shadow: 2px 2px #ff0066;
     font-family: 'Press Start 2P', cursive;
   }
   
