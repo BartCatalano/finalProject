@@ -16,10 +16,18 @@ function ListPage() {
 
 
     const loadData = () => {
-        axios.get("http://127.0.0.1:8080/api/videogames").then((resp) => {
-            setvideogames(resp.data);
-
+        axios.get("http://127.0.0.1:8080/api/videogames").then((resp=> {
+          const sortedItems = resp.data.sort((a, b) => {
+            if (a.title < b.title) return -1;
+            if (a.title > b.title) return 1;
+            return 0;
+          });
+          setvideogames(sortedItems);
         })
+        )  
+            
+
+        
     };
 
     console.log(videogames);

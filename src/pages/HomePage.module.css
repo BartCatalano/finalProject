@@ -133,6 +133,14 @@
   }
 
 }
+@media (max-width: 6840px) {
+  
+  .testoHome {
+    font-size: 0.9rem;
+    padding-top: 100px ;
+  }
+
+}
 
 @media (max-width: 560px) {
   
@@ -144,7 +152,7 @@
 
 }
 
-@media (max-width: 420px) {
+@media (max-width: 429px) {
   .titleHome {
     font-size: 20px;
     padding: 10px;

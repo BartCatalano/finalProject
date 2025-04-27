@@ -1,0 +1,122 @@
+.containerDetail {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .gameDetailCard {
+    background-color: #111;
+    border: 2px solid #ff0022;
+    box-shadow: 0 0 10px #ff0000, 0 0 20px #00ffcc, 0 0 30px #00ffcc;
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .coverImageDetail {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+  
+  .gameTitleDetail {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #d4f51c;
+    text-shadow: 2px 2px #ff0066;
+    font-family: 'Press Start 2P', cursive;
+  }
+  
+  .gameDescription {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+  
+  .gamePrice {
+    font-size: 18px;
+    color: #ff0066;
+  }
+  
+  .gameGenre {
+    font-size: 18px;
+    color: #00ffcc;
+    margin: 10px 0;
+  }
+  
+  .gamePlatforms {
+    font-size: 18px;
+    color: #ff0066;
+  }
+  
+  .gamePlatforms ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .platform {
+    background-color: #222;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #00ffcc;
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .platformLogo {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+  }
+  
+  @media (max-width: 600px) {
+    .gameDetailCard {
+      width: 90%;
+      margin: auto;
+      padding: 15px;
+    }
+  
+    .coverImageDetail {
+      height: 250px;
+    }
+  
+    .gameTitleDetail {
+      font-size: 20px;
+    }
+  
+    .gameDescription {
+      font-size: 14px;
+    }
+  
+    .gamePrice {
+      font-size: 16px;
+    }
+  
+    .gameGenre, .gamePlatforms {
+      font-size: 16px;
+    }
+  
+    .platformLogo {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  
