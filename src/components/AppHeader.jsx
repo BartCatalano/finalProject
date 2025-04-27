@@ -33,7 +33,7 @@ const [isActive, setIsActive] = useState(false);
         
         <header className={style.bodyHeader}>
         <div className={style.titleHeader}>
-          Videogame World
+          Retrò World
         </div>
         <div>
         <nav className={style.nav}>

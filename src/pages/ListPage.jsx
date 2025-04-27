@@ -27,7 +27,7 @@ function ListPage() {
     return (
         <>
           <div className={style.container}>
-  <h1>Lista Videogame Disponibili</h1>
+  <h1 className={style.titleList}>Lista Videogame Disponibili</h1>
 
   <div className={style.containerGrid}>
     {videogames.map((curItem) => (

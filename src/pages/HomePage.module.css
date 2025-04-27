@@ -18,20 +18,25 @@
   letter-spacing: 2px;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+
 .testoHome {
+  color: black;
   text-align: center;
-  color: rgb(250, 244, 244);
-  font-size: xx-large;
-  border: 2px solid #ff0022;
-  box-shadow: 0 0 10px #ff0000, 0 0 20px #00ffcc, 0 0 30px #00ffcc;
-  border-radius: 10px;
+  width: 40%;
+  height: 55%;
   padding: 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin: 0 auto;
+  font-size: 2rem;
+  text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00;
+  filter: blur(0.5px);
+  z-index: 1;
 }
 
 .bodyHome {
-  background-image: url(../../public/img/sfondoNavbar.png);
+  background-image: url(../../public/img/arcade.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -62,24 +67,44 @@
     box-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #00ffcc;
   }
 }
+@media (max-width: 1550px) {
 
+  .testoHome {
+   
+    font-size: 1.5rem;
+    
+  }
+ 
+}
 @media (max-width: 1200px) {
   .titleHome {
     font-size: 28px;
     padding: 20px;
   }
   .testoHome {
-    font-size: large;
-    padding: 15px;
+    font-size: 1.3rem;
+    padding-top: 25px;
+  }
+}
+@media (max-width: 1000px) {
+  .testoHome {
+    padding: 0;
+    font-size: 1.1rem;
+    padding-top: 150px;
+    z-index: 0;
   }
 }
 
-
-@media (max-width: 800px) {
+@media (max-width: 860px) {
   .titleHome {
     font-size: 24px;
     padding: 15px;
     flex-direction: column;
+  }
+  .testoHome {
+    font-size: 1.1rem;
+    z-index: 0;
+    padding-top: 120px ;
   }
 
   .bodyHome {
@@ -97,10 +122,26 @@
             animation: pulseBorder 2s infinite alternate;
   }
 
-  .testoHome {
-    font-size: medium;
+
+}
+@media (max-width: 770px) {
   
+  .testoHome {
+    font-size: 1rem;
+    z-index: 0;
+    padding-top: 100px ;
   }
+
+}
+
+@media (max-width: 560px) {
+  
+  .testoHome {
+    font-size: 0.8rem;
+    z-index: 0;
+    padding-top: 90px ;
+  }
+
 }
 
 @media (max-width: 420px) {
@@ -113,10 +154,10 @@
 
 
   .testoHome {
-    font-size: small;
-    padding: 10px;
-    width: 100%;
-    text-align: center;
+    font-size: 0.8rem;
+    width: 60%;
+    z-index: 0;
+    padding-top: 120px ;
   }
 }
 

@@ -26,6 +26,14 @@ body {
     justify-items: center;
     width: 100%; /* La griglia deve essere larga il 100% */
   }
+  .titleList {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 32px;
+    color: #00ffea;
+    text-shadow: 2px 2px #ff0066;
+    text-align: center;
+    letter-spacing: 2px;
+  }
   
   .videogameCard {
     background-color: #111;
@@ -59,7 +67,7 @@ body {
   .coverImage {
     width: 100%;
     height: 150px;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 10px 10px 0 0;
   }
   
