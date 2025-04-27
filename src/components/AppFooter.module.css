@@ -1,0 +1,26 @@
+.footer{
+    background-color: black;
+    border-top: 1px solid;
+    border-color: aquamarine;
+    height: 100px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.contactLink {
+    font-family: 'Cinzel', serif; 
+    font-size: 18px;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.contactLink:hover {
+    background: linear-gradient(45deg, #ff0000, #c6e22b, #821400);
+    box-shadow: 0 0 10px rgba(138, 43, 226, 0.7);
+}

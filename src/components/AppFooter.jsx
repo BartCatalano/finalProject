@@ -1,8 +1,14 @@
+import style from './AppFooter.module.css';
+
 function AppFooter() {
     return (
-      <footer>
-       <h1>sono Footer</h1>
-      </footer>
+      <footer className={`${style.footer}`}>
+      <div>
+      <p>© 2025 BartArcade</p></div>
+      <div>
+      <a href="mailto:catalanobartolomeo@gmail.com" className={`${style.contactLink}`}>Contattami</a>
+      </div>
+    </footer>
     );
   }
   
