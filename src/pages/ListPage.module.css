@@ -1,4 +1,3 @@
-/* Assicurati che il body abbia un background nero e altezza completa */
 body {
     margin: 0;
     padding: 0;
@@ -17,6 +16,20 @@ body {
     justify-content: flex-start;
     height: 100%; /* Aggiunto per mantenere l'altezza completa */
   }
+  .searchBar{
+    width: 70%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #00ffcc;;
+  border-radius: 8px;
+  background-color: #111;
+  color:  #ff0066;
+  margin: 20px auto; 
+  display: block;
+  transition: width 0.3s ease;
+}
+  
   
   .containerGrid {
     display: grid;
@@ -24,7 +37,7 @@ body {
     gap: 20px;
     margin-top: 50px;
     justify-items: center;
-    width: 100%; /* La griglia deve essere larga il 100% */
+    width: 100%;
   }
   .titleList {
     font-family: 'Press Start 2P', cursive;
@@ -35,6 +48,14 @@ body {
     letter-spacing: 2px;
   }
   
+  .notFound {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 32px;
+    color: #00ffea;
+    text-shadow: 2px 2px #ff0066;
+    text-align: center;
+    letter-spacing: 2px;
+  }
   .videogameCard {
     background-color: #111;
     border: 2px solid #ff0022;
