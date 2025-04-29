@@ -79,12 +79,3 @@ function DetailsPage() {
 
 
 export default DetailsPage;
- {/* {videogames ? (
-        <div className="container">
-          <h1>{videogames.title}</h1>
-          <p>{videogames.descrizione}</p>
-          <p>Prezzo: {videogames.prezzo}€</p>
-        </div>
-      ) : (
-        <div>Caricamento...</div>
-      )} */}

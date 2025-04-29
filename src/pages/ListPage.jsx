@@ -14,15 +14,11 @@ function ListPage() {
 
 
     const loadData = () => {
-        axios.get("http://127.0.0.1:8080/api/videogames").then((resp=> {
+        axios.get("http://127.0.0.1:8080/api/videogames").then((resp=> { 
           // uso il sort per ordinare i videogames
-          const sortedItems = resp.data.sort((a, b) => {
-            // setto a e b come paragome
-            if (a.title < b.title) return -1;
-            if (a.title > b.title) return 1;
-            // do la posizione in base a quale è maggiore
-            return 0;
-          });
+          const sortedItems = resp.data.sort((a, b) =>
+            a.title.localeCompare(b.title, undefined, { sensitivity: 'base' })
+          );
           setvideogames(sortedItems);
         })
         )          
