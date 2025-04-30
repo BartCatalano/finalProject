@@ -21,13 +21,6 @@ const navMenu = [
 
 function AppHeader() {
 
-const [isActive, setIsActive] = useState(false);
-
-  const toggleMenu = () => {
-    setIsActive(!isActive);
-  };
-
-
 
     return (
         

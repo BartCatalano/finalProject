@@ -20,6 +20,8 @@ function ListPage() {
             a.title.localeCompare(b.title, undefined, { sensitivity: 'base' })
           );
           setvideogames(sortedItems);
+          console.log(sortedItems);
+          
         })
         )          
     };

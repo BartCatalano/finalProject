@@ -1,3 +1,6 @@
+body{
+  background-color: black;
+}
 .container {
   background-color: black;
   color: white;
@@ -76,14 +79,41 @@
   }
  
 }
-@media (max-width: 1200px) {
+@media (max-width: 1493px) {
+
+  .testoHome {
+   
+    font-size: 1.8rem;
+    
+  }
+  @media (max-width: 1273px) {
+
+    .testoHome {
+     
+      font-size: 1.7rem;
+      
+    }
+   
+  }
+
+}
+@media (max-width: 1214px) {
   .titleHome {
     font-size: 28px;
     padding: 20px;
   }
   .testoHome {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     padding-top: 25px;
+  }
+  @media (max-width: 1023px) {
+
+    .testoHome {
+     
+      font-size: 1.4rem;
+      
+    }
+   
   }
 }
 @media (max-width: 1000px) {
@@ -124,7 +154,7 @@
 
 
 }
-@media (max-width: 770px) {
+@media (max-width: 779px) {
   
   .testoHome {
     font-size: 1rem;
